@@ -1,0 +1,95 @@
+<!-- 
+  Name: Ransford Addai
+  Training ID: 32524
+  Week Four Web Development Assignment
+  
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamental JavaScript Cocepts</title>
+</head>
+<body>
+
+    <!-- 1. Introduction to JavaScript -->
+    <script>
+        // Display an alert when the webpage loads
+        window.onload = function() {
+            alert("Welcome to my webpage!");
+        };
+    </script>
+
+    <!-- 2. Variables, Data Types, and Operators -->
+    <script>
+        // Declare variables of different data types
+        let strVariable = "Hello";
+        let numVariable = 5;
+        let boolVariable = true;
+
+        // Perform arithmetic operations and display results
+        console.log(numVariable + 3);
+        console.log(boolVariable && false);
+    </script>
+
+    <!-- 3. Control Structures (if, else, loops) -->
+    <script>
+        // Check if a number is even or odd
+        let userInput = prompt("Enter a number:");
+
+        if (userInput % 2 === 0) {
+            console.log("Even");
+        } else {
+            console.log("Odd");
+        }
+
+        // Implement a for loop to print numbers from 1 to 10
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+    </script>
+
+    <!-- 4. Functions and Scope -->
+    <script>
+        // Create a function that returns the sum of two numbers
+        function addNumbers(number1, number2) {
+            return number1 + number2;
+        }
+
+        // Call the function with different arguments and display the results
+        console.log(addNumbers(2, 3));
+    </script>
+
+    <!-- 5. Arrays and Objects -->
+    <script>
+        // Declare an array of favorite fruits
+        let favoriteFruits = ["Apple", "Banana", "Orange"];
+
+        // Create an object representing a person
+        let person = {
+            name: "John",
+            age: 25,
+            hobby: "Reading"
+        };
+    </script>
+
+    <!-- 6. Higher Order Function -->
+    <script>
+        // Write a higher-order function called modifyArray
+        function modifyArray(array, callback) {
+            return array.map(callback);
+        }
+
+        // Example usage of the higher-order function
+        let modifiedArray = modifyArray([1, 2, 3], function(item) {
+            return item * 2;
+        });
+        console.log(modifiedArray);
+    </script>
+
+</body>
+</html>
